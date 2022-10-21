@@ -1,10 +1,10 @@
-# API-REST-WEB - IT Academy Bootcamp
+# API-REST-WEB / IT Academy Bootcamp
 Web CRUD MySQL &amp; Thymeleaf
 
 Tenim una entitat anomenada Sucursal, que disposa de les següents propietats:
 
 -          Integer pk_SucursalID
--          String nomSucursal
+-          String nomSucursalCancel changes
 -          String paisSucursal
 
 També tenim una DTO anomenada SucursalDTO, que tindrà les mateixes propietats que l’entitat Sucursal, afegint-ne una:
