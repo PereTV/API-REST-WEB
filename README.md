@@ -19,11 +19,11 @@ El consell és que SucursalDTO la facis servir al Controller y la Vista, i Sucur
 
 La classe ubicada al paquet controllers (SucursalController, per exemple), haurà de ser capaç de donar resposta a les següents peticions per actualitzar i consultar informació:
 
-http://localhost:9000/sucursal/add
-http://localhost:9000/sucursal/update
-http://localhost:9000/sucursal/delete/{id}
-http://localhost:9000/sucursal/getOne/{id}
-http://localhost:9000/sucursal/getAll
+- http://localhost:9000/sucursal/add
+- http://localhost:9000/sucursal/update
+- http://localhost:9000/sucursal/delete/{id}
+- http://localhost:9000/sucursal/getOne/{id}
+- http://localhost:9000/sucursal/getAll
 
 Com pots veure, a l’arxiu application.properties, hauràs de configurar que el port a utilitzar sigui el 9000.
 
