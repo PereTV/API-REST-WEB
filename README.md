@@ -9,7 +9,7 @@ Tenim una entitat anomenada Sucursal, que disposa de les següents propietats:
 
 També tenim una DTO anomenada SucursalDTO, que tindrà les mateixes propietats que l’entitat Sucursal, afegint-ne una:
 
--          String tipusSucursal.
+-          String tipusSucursal
 
 Aquesta propietat, en funció del país de la sucursal, haurà d’indicar si és “UE” o “Fora UE”. Per a fer això, pots tenir una llista privada a la mateixa DTO (per exemple: List<String> països), amb els països que formen part de la UE.
 
