@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<th:block th:insert="Fragments/head :: head"></th:block>
+</head>
+<body>
+	<div class="container">
+		<div th:insert="Fragments/BodyHeader :: div"></div>
+
+
+		<div class="cloud-table-scroll">
+
+			<table class="table table-stripped ">
+				<thead>
+					<th>Id</th>
+					<th>Nom</th>
+					<th>País</th>
+					<th>Tipus</th>
+					<th colspan="3"></th>
+				</thead>
+				<tbody>
+					<tr th:each="sucursalDTO: ${DATA_SucursalsDtoLlista}">
+						<td th:text="${sucursalDTO.idSucursal}"></td>
+						<td th:text="${sucursalDTO.nomSucursal}"></td>
+						<td th:text="${sucursalDTO.paisSucursal}"></td>
+						<td th:text="${sucursalDTO.tipusSucursal}"></td>
+						<td><a class="btn btn-outline-info"
+							th:href="@{/ConsultaSucursal/__${sucursalDTO.idSucursal}__}" role="button">Consultar</a></td>
+						<td><a class="btn btn-outline-warning"
+							th:href="@{/EditaSucursal/__${sucursalDTO.idSucursal}__}" role="button">Editar</a></td>
+						<td><a class="btn btn-outline-danger"
+							th:href="@{/BaixaSucursal/__${sucursalDTO.idSucursal}__}" role="button"
+							onclick="return confirm('Confirmi que vol eliminar aquesta sucursal')">Eliminar</a></td>
+					</tr>
+				</tbody>
+
+
+
+			</table>
+		</div>
+
+		<br> <a class="btn btn-outline-primary" th:href="@{/AltaSucursal}"
+			role="Button">Afegir sucursal</a>
+
+	</div>
+
+</body>
+</html>
